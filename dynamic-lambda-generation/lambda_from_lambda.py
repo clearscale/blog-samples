@@ -15,8 +15,8 @@ logger.setLevel(logging.INFO) # Set the logging level to INFO
 # Setup variables
 region = "us-east-1"  # Change to your desired region
 lambdas_iam_role = "arn:aws:iam::<account-id>:role/service-role/<your-lambda-execution-role-name>"  # Replace with your IAM role ARN
-myvar = "dynamic-function"  # You can replace with your variable
-template_name = "mytemplate"  # Default value for the target function name
+myvar = "myvariable"  # You can replace with your variable
+template_name = "dynamic-function"  # Default value for the target function name
 
 # Setup boto3 clients
 lambda_client = boto3.client('lambda', region_name=region)  # Create a Lambda client
