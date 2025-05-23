@@ -1,0 +1,31 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowLambdaActionsAndLogging",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:CreateFunction",
+        "lambda:InvokeFunction",
+        "lambda:AddPermission",
+        "lambda:GetFunction",
+        "iam:PassRole",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": [
+        "arn:aws:lambda:<aws-region>:<aws-account-id>:function:*",
+        "arn:aws:iam::<aws-account-id>:role/service-role/lambda-creates-lambda-role-tyqb7j6i",
+        "arn:aws:logs:us-east-1:<aws-account-id>:*"
+      ]
+    },
+    {
+      "Sid": "AllowGetFunctionOnWildcard",
+      "Effect": "Allow",
+      "Action": "lambda:GetFunction",
+      "Resource": "*"
+    }
+  ]
+}
+
