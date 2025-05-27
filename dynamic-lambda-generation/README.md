@@ -8,13 +8,11 @@ This project demonstrates how to create AWS Lambda functions programmatically fr
 
 ## Architecture
 
-Below is a simplified diagram of the flow:
+Below is a diagram of the flow:
 
 ![Dynamic Lambda Creation Flow](images/dynamic-lambda-flow.png)
 
 An external event (e.g., from S3, API Gateway, or EventBridge) triggers the existing Lambda function. This function dynamically creates a new Lambda function at runtime, assigning it an IAM role and enabling observability via CloudTrail and CloudWatch.
-
-For a full explanation of the design pattern, use cases, and security practices, refer to the [blog post](https://your-blog-link.com).
 
 ## Features
 
