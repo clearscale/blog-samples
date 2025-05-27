@@ -1,4 +1,4 @@
-# Lambda Creates Lambda
+# Dynamic Lambda Generation
 
 A serverless solution that allows an AWS Lambda function to dynamically create additional Lambda functions.
 
