@@ -6,6 +6,16 @@ A serverless solution that allows an AWS Lambda function to dynamically create a
 
 This project demonstrates how to create AWS Lambda functions programmatically from within another Lambda function. It's useful for scenarios where you need to dynamically provision serverless resources based on runtime conditions.
 
+## Architecture
+
+Below is a simplified diagram of the flow:
+
+![Dynamic Lambda Creation Flow](dynamic-lambda-generation/images/dynamic-lambda-flow.png)
+
+An external event (e.g., from S3, API Gateway, or EventBridge) triggers the existing Lambda function. This function dynamically creates a new Lambda function at runtime, assigning it an IAM role and enabling observability via CloudTrail and CloudWatch.
+
+For a full explanation of the design pattern, use cases, and security practices, refer to the [blog post](https://your-blog-link.com).
+
 ## Features
 
 - Creates Lambda functions on-demand from within a Lambda function
