@@ -1,0 +1,5 @@
+com/clearscale/legacy/inventory/InventoryApplication.class
+com/clearscale/legacy/inventory/model/Product.class
+com/clearscale/legacy/inventory/service/InventoryService$1.class
+com/clearscale/legacy/inventory/util/ReportGenerator.class
+com/clearscale/legacy/inventory/service/InventoryService.class
